@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <script type="text/javascript" src="/appspresso/appspresso.js"></script>
+        <meta http-equiv="pragma" content="no-cache"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script>
+			//activate ax.log(), comment out when you release app
+			ax.runMode = ax.MODE_DEBUG;
+			ax.log("Hello World");
+		</script>
+		<script>
+		function move(){
+			parent.location='index.html'
+		}		
+		</script>
+	</head>
+	<body>
+		<h1>the second page</h1>
+		<div><button onClick="ax.log('Huh?')")>print log</button></div>
+		<button onClick="parent.location='index.html'")>Go to index.html</button>
+		<button onClick="move();")>Go to index.html with function</button>
+		<div>Vibrate<br>
+		<button onClick="deviceapis.deviceinteration.startVibrate(3);'">Start</button>
+		<button onClick="deviceapis.deviceinteration.stopVibrate();">Stop</button>
+		</div>
+	</body>
+</html>
