@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project id="com.ax.imyaman.h3remote" title="h3_remote" version="1.0.0">
+<!-- On this tab, you can not directly modify the source.-->
+	<widget id="http://h3remote.imyaman.ax.com/h3_remote">
+		<content src="index.html" />
+		<icon src="icon.png" />
+		<feature name="http://wacapps.net/api/deviceapis"/>
+	</widget>
+	<android id="com.ax.imyaman.h3remote">
+		<preference name="activity" readonly="true" value="Activity"/>
+		<preference name="versionCode" readonly="true" value="1" />
+		<preference name="targetSdkVersion" readonly="true" value="7"/>
+	    <preference name="minSdkVersion" readonly="true" value="7"/>
+	    <preference name="maxSdkVersion" readonly="true" value="8"/>
+	    <preference name="splash" readonly="true" value="splash/splash_android.png"/>
+	</android>
+	<iphone id="com.ax.imyaman.h3remote">  
+		<preference name="buildVersionNumber" readonly="true" value="1"/>
+		<preference name="targetDevice" readonly="true" value="1" />
+		<preference name="splashImg" readonly="true" value="splash/splash_ios.png"/>
+		<preference name="icon1" value="icon_iphone.png"/>
+		<preference name="icon2" value="icon_iphone4.png"/>
+		<preference name="icon3" value="icon_ipad.png"/>
+		<sign_info></sign_info>
+	</iphone>  	
+	<plugin id="deviceapis"/>
+</project>
